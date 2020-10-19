@@ -1,0 +1,14 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CCS"
+        xmlns:WpfPageTransitions="clr-namespace:WpfPageTransitions;assembly=WpfPageTransitions" x:Class="CCS.user_form"
+        mc:Ignorable="d" Height="579.068" Width="883.567" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Icon="cgs.ico" Title="Career Counseling System" Closing="Window_Closing">
+    <Grid>
+
+        <WpfPageTransitions:PageTransition x:Name="transition"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,20 @@
+﻿<Window x:Class="CCS.dialog.info"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CCS.dialog"
+        mc:Ignorable="d"
+        Title="About CCS" Height="440" Width="758.667" ShowInTaskbar="False" ResizeMode="NoResize">
+    <Grid>
+        <Image x:Name="image" Margin="308,134.333,303.333,159.667" Source="/CCCS;component/user/cgs.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/CCCS;component/user/cgs.png" Opacity="0.2"/>
+            </Image.OpacityMask>
+        </Image>
+        <TextBlock x:Name="textBlock" Height="115.333" Margin="35.667,34.667,21.333,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18.667" FontFamily="Segoe UI Light"><Run FontFamily="Segoe UI Semibold" Text="Career Counseling System "/><Run Text="is a computer based method which allows people to make vocational decisions having gone through series of steps thereby promoting and managing career growth and development. The system has features such as occupation information database, self-understanding test, and career planning tool."/></TextBlock>
+        <TextBlock x:Name="textBlock1" Margin="60.333,0,10,0" TextWrapping="Wrap" FontSize="18.667" FontFamily="Segoe UI Semilight" Height="203.335" VerticalAlignment="Bottom"><Run Text="   Aptitude assessment test"/><LineBreak/><Run/><LineBreak/><Run Text="   Institution search"/><LineBreak/><Run Text="  "/><LineBreak/><Run Text="   Full guidance with a counselor in accordance with results"/></TextBlock>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="55.667,173.331,0,0" TextWrapping="Wrap" Text="FEATURES" Width="151.333" FontFamily="Segoe UI Semibold" FontSize="18.667" Height="29.667" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

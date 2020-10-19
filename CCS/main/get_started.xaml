@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="CCS.main.get_started"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CCS.main"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Width="378" Height="520">
+    <UserControl.Background>
+        <ImageBrush ImageSource="/CCCS;component/bg.jpg" Stretch="UniformToFill"/>
+    </UserControl.Background>
+    <Grid Margin="4.5,0,-3.49,1">
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Button x:Name="button" Content="Get Started" Height="37.887" Margin="129.671,0,122.932,73.352" VerticalAlignment="Bottom" Click="button_Click" BorderBrush="#FFADE5AF" Cursor="Hand" Background="#FF274564" Foreground="White"/>
+        <TextBox x:Name="emailbox" Height="31.333" Margin="56.338,0,55.985,133.927" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="16" FontFamily="Segoe UI Light" CharacterCasing="Lower">
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.4"/>
+            </TextBox.Background>
+        </TextBox>
+        <Label x:Name="label" Content="Email Address" HorizontalAlignment="Left" Margin="55.252,0,0,162.927" Width="96.732" Height="30.667" VerticalAlignment="Bottom" FontFamily="Segoe UI Historic" FontSize="13.333"/>
+
+        <Label x:Name="label1" Content=" CAREER COUNSELING " Height="39.333" Margin="70.591,139.999,46.501,0" VerticalAlignment="Top" FontSize="24" FontFamily="Segoe UI Semilight" TextOptions.TextHintingMode="Animated" FontWeight="Bold">
+            <Label.Foreground>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF2F4F25" Offset="0"/>
+                    <GradientStop Color="#FF0A479B" Offset="0.881"/>
+                </LinearGradientBrush>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="label3" Content="Helping you find the right career" Margin="96.553,210.868,52.436,0" FontStyle="Italic" FontFamily="Baskerville Old Face" FontSize="14.667" Height="27.334" VerticalAlignment="Top"/>
+        <Image x:Name="image" Height="70.555" Margin="138.09,55.776,151.538,0" VerticalAlignment="Top" Source="/CCCS;component/user/cgs.png"/>
+        <TextBlock x:Name="textBlock" Margin="147.668,176.751,63.236,0" TextWrapping="Wrap" Text="SYSTEM" Height="30.573" VerticalAlignment="Top" FontFamily="Segoe UI Black" FontSize="21.333" TextDecorations="{x:Null}" FontWeight="Bold"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Right" Height="22.667" Margin="0,10,19.332,0" TextWrapping="Wrap" Text="Admin" VerticalAlignment="Top" Width="36.866" TextDecorations="Underline" RenderTransformOrigin="1.411,0.463" Foreground="#FF196D2D" MouseLeftButtonDown="textBlock1_MouseLeftButtonDown" Cursor="Hand"/>
+        <TextBlock x:Name="textBlock2" Height="24" Margin="94.015,0,79.066,22.5" TextWrapping="Wrap" Text="Click to find out more about this system" VerticalAlignment="Bottom" TextDecorations="{x:Null}" FontFamily="Segoe UI Light" Foreground="#FF132780" Cursor="Hand" MouseLeftButtonDown="textBlock2_MouseLeftButtonDown"/>
+        <Image x:Name="image1" HorizontalAlignment="Left" Height="29" Margin="72.934,0,0,28.5" VerticalAlignment="Bottom" Width="18.081" Source="/CCCS;component/info.png" RenderTransformOrigin="0.502,0.034" Cursor="Hand" MouseLeftButtonDown="textBlock2_MouseLeftButtonDown"/>
+
+    </Grid>
+</UserControl>

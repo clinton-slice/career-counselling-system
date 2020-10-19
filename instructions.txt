@@ -1,0 +1,7 @@
+
+1. Import the database. The sql file can be found in the Database folder
+
+2. By default, the database connection has been set to root as username and no password. 
+   If your database login detail is different, you would have to load the project source code and edit MainWindow.xaml.cs using visual studio, 
+   change the connection details then compile & build.
+ 

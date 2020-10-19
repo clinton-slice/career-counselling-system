@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="CCS.main.admin_login"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:CCS.main"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300" Width="378" Height="520">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/CCCS;component/bg.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Button x:Name="button" Content="Login" Margin="105.333,0,104,182" BorderBrush="#FFCBE3F0" Click="button_Click" Foreground="White" Height="30" VerticalAlignment="Bottom">
+            <Button.Background>
+                <SolidColorBrush Color="#FF274564" Opacity="0.9"/>
+            </Button.Background>
+        </Button>
+        <Image x:Name="image" Height="53.333" Margin="156,64.5,151,0" VerticalAlignment="Top" Source="/CCCS;component/user/cgs.png" AllowDrop="True">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/CCCS;component/user/cgs.png" Opacity="0.7"/>
+            </Image.OpacityMask>
+        </Image>
+        <Button x:Name="button2"  Margin="105.333,0,88,47.167" BorderBrush="#FFCBE3F0" Click="button2_Click" Height="30" VerticalAlignment="Bottom">
+            <Button.Background>
+                <SolidColorBrush Color="#FFFFFBFB" Opacity="0.45"/>
+            </Button.Background>
+
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/CCCS;component/user/home.png" Height="21" Width="19.375"/>
+                <Label Content="Home"/>
+            </StackPanel>
+        </Button>
+        <TextBox x:Name="username" Height="27.333" Margin="88.667,194,88,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="14.667" MaxLength="10"/>
+        <PasswordBox x:Name="password" Margin="88.667,254,88,238.667" FontSize="14.667"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="15.667" Margin="88.667,173.333,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="86"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Height="15.667" Margin="88.667,237.333,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="86"/>
+        <TextBlock x:Name="textBlock1" Height="24.666" Margin="138.333,128.667,108.333,0" TextWrapping="Wrap" Text="ADMINISTRATOR" VerticalAlignment="Top" FontSize="13.333" FontWeight="Bold"/>
+
+    </Grid>
+</UserControl>
